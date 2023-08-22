@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Página inicial</title>
+	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+	<link type="text/css" rel="stylesheet" href="estilos.css">
+	<style type="text/css">
+
+		
+	#topo {background: #1581b1;}
+	#texto {color: white;}
+	#fundo {}
+
+	</style>
+	
+
+</head>
+
+	<body class="bg">
+
+		<table id="topo" border="0px" width="100%" align="center">
+			<tr>
+
+			<td align="left"> <img src="imagens/arcor-logo.png" width="100"> </td>
+			<td align="left"> <img src="imagens/sgi.png" width="100"> </td>
+
+			<td width="100%" id="topo" align="right">
+			<a id="texto" href="index.html">Início |</a>
+			<a id="texto" href="clientes.html">Clientes  | </a>
+			<a id="texto" href="equipe.html">Equipe  | </a>
+			<a id="texto" href="hierarquia.html">Hierarquia  |</a>
+			<a id="texto" href="resultados.html">Resultados  |</a>
+			<a id="texto" href="mais.html">Mais</a>
+			</td>
+
+			</tr>
+
+		</table>
+
+		<h1 align="center"><font face="Arial" style="color: mediumblue;"> <u>Seja bem-vindo! </u></font> <br /></h1>
+
+	<py-script>
+
+    # Dias sem Acidentes de trabalho
+
+ano= 2021       #formato AAAA
+mes=  6         #usar números
+dia= 3
+
+import datetime
+
+datapadrao = datetime.date(ano, mes, dia)
+hoje = datetime.date.today()
+
+if datapadrao > hoje:
+    delta = datapadrao - hoje
+
+elif datapadrao <= hoje:
+    delta = hoje - datapadrao
+
+    print ('Acidentes com afastamento: ',delta.days, 'dias.')
+
+</py-script>
+
+<br>
+<py-script>
+    # Dias sem Acidentes de trabalho
+
+ano= 2021       #formato AAAA
+mes=  1         #usar números
+dia= 22
+
+import datetime
+
+datapadrao = datetime.date(ano, mes, dia)
+hoje = datetime.date.today()
+
+if datapadrao > hoje:
+    delta = datapadrao - hoje
+
+elif datapadrao <= hoje:
+    delta = hoje - datapadrao
+
+print ('Acidentes sem afastamento: ',delta.days,'dias.')
+
+</py-script>
+
+		
+
+	</body>
+</html>
