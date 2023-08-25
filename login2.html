@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    
+    
+    <title>Tela de login2</title>
+
+</head>
+<body>
+<br>
+    <py-script>
+       usuarios = {                    #Lista de funcionários
+        523789:f'Alan Alves',
+        585483:f'Gabriel Araújo',
+        578732:f'Albert Adrian',
+        807215:f'Maxwel Dias',
+        578003:f'Davidson Alves',
+        584007:f'Cleyton Junio',
+        586529:f'Santhiago dos Santos',
+        585934:f'Ryan Carvalho',
+        582847:f'Romenique Jose',
+        566104:f'Jose Henrique',
+        523777:f'Junivaldo Aparecido',
+        572936:f'Cleyton Soares',
+        539561:f'Geovane de Jesus',
+        556812:f'Waleff Pereira',
+        542320:f'Gustavo Henrique',
+        567358:f'Matheus Felipe',
+        573526:f'Fernando Correia',
+        572921:f'Antonio Carlos',
+        558319:f'Evandro Carvalho'
+        }
+while True:                                 #Atribuição do nome ao número
+    m = input()
+    m = int(m)
+    m = usuarios[m]
+    print('Seja bem-vindo, {}!'.format(m))
+    break
+
+
+
+
+    </py-script>
+    
+</body>
+</html>
